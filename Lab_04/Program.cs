@@ -1,4 +1,6 @@
-﻿using System;
+﻿//It's a task from 13.11.2021.
+
+using System;
 
 namespace Lab_04
 {
@@ -6,7 +8,13 @@ namespace Lab_04
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Tutaj będziemy robić rzeczy na studia!");
+            int[] numbers = { 18, 8, 9, 4 };
+
+            foreach( int num in numbers)
+            {
+                double x = Math.Pow(num, 2);
+                Console.WriteLine(num + "^2 = " + x);
+            }
         }
     }
 }
